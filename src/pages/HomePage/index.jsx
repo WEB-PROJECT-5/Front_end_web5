@@ -130,6 +130,7 @@ export default function HomePage() {
 
                     const res = await HomePageApi.getTopGame();
                     setListGame(res.data.data);
+                console.log("data",res.data.data);
                 } catch (error) {
                     console.log(error);
                 }
@@ -204,9 +205,6 @@ export default function HomePage() {
                         }}
                         spaceBetween={50}
                         slidesPerView={1}
-
-
-
                     >
                         <SwiperSlide> <div className="swiper-slide">
                             <img src="https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/173789/Originals/Tro-choi-mien-phi-khong-tai-ve-may-0.jpg" />

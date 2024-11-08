@@ -6,19 +6,19 @@ const HomePageApi = {
         return axiosClient.get(url);
     },
     getTopGame(){
-        const url = "/games/topgame";
+        const url = "/games/tag/topgame";
         return axiosClient.get(url);
     },
     getUehReview(){
-        const url = "/games/uehreview";
+        const url = "/games/tag/uehreview";
         return axiosClient.get(url);
     },
     getUehGreen(){
-        const url = "/games/uehgreen";
+        const url = "/games/tag/uehgreen";
         return axiosClient.get(url);
     },
     getUehEduGames(){
-        const url = "/games/edugames";
+        const url = "/games/tag/edugames";
         return axiosClient.get(url);
     }
 }
