@@ -26,6 +26,8 @@ import HomePage from "./pages/HomePage";
 import Introduce from "./pages/Introduce";
 import Header from "./components/Header";
 import Login from "./pages/LoginPage/index";  // Đảm bảo bạn đã tạo trang này
+import Profile from "./pages/ProfilePage/profile";
+import SetProfile from "./pages/SetProfilePage/setprofile";
 
 
 function App() {
@@ -42,6 +44,8 @@ function App() {
          {shouldShowHeaderFooter && <Header />}
          <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/profile/setprofile" element={<SetProfile />} />
             <Route path="/introduce" element={<Introduce />} />
             <Route path="/login" element={<Login />} /> {/* Định nghĩa route cho login */}
          </Routes>

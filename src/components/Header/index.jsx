@@ -1,60 +1,61 @@
-import React from 'react'
-import "./style.css"
+import React from 'react';
+import "./style.css";
+
 export default function Header() {
    return (
       <header className="header">
-         <div className="row header_top scrolled">
-            <div className="logo col-3 ">
-               <img src="https://res.cloudinary.com/phucdev/image/upload/v1730797820/LOGO_MINI_gnydkq.png" alt="Logo is not exits" />
-            </div>
-            {/* col-4 */}
-            <div className="navbar-header ">
-               <nav className="navbar-header navbar-expand-lg ">
-                  <div className="collapse navbar-collapse" id="navbarNav">
-                     <ul className="navbar-nav">
-                        <li className="nav-item">
-                           <a className="nav-link " href="/">Home</a>
-                        </li>
-                        <li className="nav-item">
-                           <a className="nav-link" href="/introduce">Introduce</a>
-                        </li>
-                        <li className="nav-item">
-                           <div className="dropdown">
-                              <a className=" nav-link btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                 Games
-                              </a>
-                              <ul className="dropdown-menu">
-                                 <li><a className="dropdown-item" href="#">Action</a></li>
-                                 <li><a className="dropdown-item" href="#">Another action</a></li>
-                                 <li><a className="dropdown-item" href="#">Something else here</a></li>
-                              </ul>
-                           </div>
-                        </li>
-                     </ul>
+         <nav className="navbar header_top scrolled navbar-expand-lg">
+            <div className="container-fluid">
+               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon"></span>
+               </button>
+               <a className="navbar-brand logo" href="/">
+                  <img src="https://i.postimg.cc/Y2D91Zrq/LOGO-MINI-gnydkq.pngnp" alt="Logo" />
+               </a>
+               {/* Collapse section for navigation links */}
+               <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" style={{ "--bs-scroll-height": "100px" }}>
+                     <li className="nav-item">
+                        <a className="nav-link active magic-hover magic-hover__square" aria-current="page" href="/">Home</a>
+                     </li>
+                     <li className="nav-item">
+                        <a className="nav-link magic-hover magic-hover__square" href="/introduce">Introduce</a>
+                     </li>
+                     <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle magic-hover magic-hover__square" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Games
+                        </a>
+                        <ul className="dropdown-menu">
+                           <li><a className="dropdown-item" href="#">UEH Review</a></li>
+                           <li><a className="dropdown-item" href="#">UEH Green</a></li>
+                           <li><hr className="dropdown-divider" /></li>
+                           <li><a className="dropdown-item" href="#">EduGames</a></li>
+                        </ul>
+                     </li>
+                     <li className="nav-item search-container">
+                        <div className="search_game">
+                           <span><i className="fa-solid fa-magnifying-glass"></i></span>
+                           <input type="text" placeholder=" Search for games" />
+                        </div>
+                     </li>
+                  </ul>
+                  <div className="favourites">
+                     <span><i className="fa-solid fa-heart" style={{ color: '#FFFFFF' }} /></span>
                   </div>
-               </nav>
-            </div>
-            <div className="header_right col-5">
-               <div className="search_game">
-                  <span><i className="fa-solid fa-magnifying-glass" /></span>
-                  <input type="text" placeholder=" Search for games" />
-               </div>
-               <div className="favourites">
-                  <span><i className="fa-solid fa-heart" style={{ color: '#FFFFFF' }} /></span>
-               </div>
-               <div className="profile">
-                  <div className="dropdown">
-                     <a className=" " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://res.cloudinary.com/phucdev/image/upload/v1730815107/ygmfpeympiidkfqsbvb5.png" style={{ width: '40px' }} alt="" />
-                     </a>
-                     <ul className="dropdown-menu" style={{ marginTop: '30px' }}>
-                        <li><a className="dropdown-item" href="#">Thông tin cá nhân</a></li>
-                        <li><a className="dropdown-item" href="#">Đăng xuất</a></li>
-                     </ul>
+                  <div className="profile">
+                     <div className="dropdown">
+                        <a className=" " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <img src="https://i.postimg.cc/Y9npzLwy/ygmfpeympiidkfqsbvb5.png" style={{ width: '40px' }} alt="" />
+                        </a>
+                        <ul className="dropdown-menu" style={{ marginTop: '30px' }}>
+                           <li><a className="dropdown-item" href="/profile">Profile</a></li>
+                           <li><a className="dropdown-item" href="/profile/setprofile">Settings</a></li>
+                        </ul>
+                     </div>
                   </div>
                </div>
             </div>
-         </div>
+         </nav>
       </header>
-   )
+   );
 }

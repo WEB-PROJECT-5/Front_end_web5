@@ -1,0 +1,233 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #00282c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    background-color: #FFA500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 60px;
+
+}
+.sign-out{
+    padding-right: 20px;
+}
+.logo {
+    font-weight: bold;
+}
+.logo-image {
+    height: 70px; /* Điều chỉnh chiều cao của logo cho phù hợp */
+    width: auto; /* Giữ tỷ lệ khung hình của logo */
+}
+.sign-out {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    padding-top: 80px;
+    width: 800px; /* Điều chỉnh giá trị này tùy theo nhu cầu */
+    max-width: 90%; /* Đảm bảo không vượt quá 90% màn hình trên các thiết bị nhỏ */
+    padding: 2rem;
+
+}
+
+.profile-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height:480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 2rem;
+
+}
+
+.info-section, .account-section {
+    width: 100%;
+    margin-bottom: 1rem;
+    flex: 1;
+
+    
+}
+
+.info-section p, .account-section p {
+    display: flex;
+    margin-bottom: 1.75rem;
+    align-items: center;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.section-header h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.section-header i {
+    margin-right: 8px; /* Khoảng cách giữa biểu tượng và tiêu đề */
+    font-size: 1.2rem; /* Kích thước biểu tượng */
+    color: #000000; /* Màu sắc biểu tượng */
+    vertical-align: middle; /* Căn giữa biểu tượng theo chiều dọc */
+}
+
+
+.edit-link {
+    color: #009dff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-left: 50px;
+}
+.edit-link:hover {
+    color: #007acc; /* Thay đổi màu khi di chuột qua */
+}
+.avatar-section {
+    position: relative;
+    position: absolute;
+    top: 50px; /* Khoảng cách từ trên cùng của form */
+    right: 40px; /* Khoảng cách từ bên phải của form */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.avatar {
+    width: 160px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.edit-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #009dff;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+p span {
+    color: #555;
+    padding-left: 0
+}
+p strong {
+    display: inline;
+    font-weight: bold;
+    color: #666;
+    font-weight: bold;
+    color: #333;
+    margin-right: 50px;
+    
+}
+@media (max-width: 704px) {
+   .header{
+    height:45px;
+   }
+   .logo-image {
+    height: 45px!important; /* Giảm chiều cao logo để vừa với header nhỏ */
+    position: absolute;
+    left: 10px; /* Đẩy logo sát về phía bên trái */
+    top: 3px; /* Căn chỉnh logo với chiều cao của header */
+}
+
+.sign-out {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 0.7rem !important;
+    padding: 0.2rem 0.5rem;
+}
+
+    .profile-container {
+        padding: 1rem; /* Giảm padding cho thiết bị nhỏ */
+    }
+
+    .profile-card {
+        width: 100%; /* Chiều rộng 100% cho các thiết bị nhỏ hơn */
+        padding: 1rem; /* Giảm padding cho card */
+        height:660px;
+        margin-top: 50px;
+    }
+    .avatar-section {
+        position: absolute;
+        top: 10px; /* Giảm giá trị này để đẩy avatar lên trên */
+        right: 45px; 
+        left:70px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+    .section-header h2 {
+        font-size: 1rem; /* Điều chỉnh kích thước tiêu đề */
+    }
+
+    p {
+        font-size: 0.8rem; /* Điều chỉnh kích thước văn bản */
+    }
+
+.info-section{
+    width: 100%;
+    margin-top: 200px; /* Đẩy các phần xuống cuối */
+}
+
+}
+
+/* Media queries cho màn hình siêu nhỏ */
+@media (max-width: 480px) {
+    .logo-image {
+        height: 25px; /* Giảm kích thước logo hơn nữa nếu cần */
+    }
+
+    .header {
+        flex-direction: column; /* Căn chỉnh cột cho tất cả thiết bị nhỏ */
+    }
+
+    .sign-out {
+        font-size: 0.8rem; /* Điều chỉnh kích thước nút đăng xuất */
+    }
+
+}
