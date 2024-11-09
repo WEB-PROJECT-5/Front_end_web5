@@ -5,7 +5,7 @@ import 'swiper/css'; // For default Swiper styles
 import 'swiper/css/pagination'; // For pagination styles
 import 'swiper/css/navigation'; // For navigation styles
 import 'font-awesome/css/font-awesome.min.css';
-import './style.css';
+import './introduce.css';
 import AOS from 'aos';
 import Swiper from 'swiper';
 // import magicMouse from 'magicmouse.js';

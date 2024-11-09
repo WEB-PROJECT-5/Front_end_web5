@@ -26,7 +26,7 @@ import HomePage from "./pages/HomePage";
 import Introduce from "./pages/Introduce";
 import Header from "./components/Header";
 import Login from "./pages/LoginPage/index";  // Đảm bảo bạn đã tạo trang này
-import Game1 from "./pages/game1/Game1.jsx";
+
 
 function App() {
    const location = useLocation();
@@ -43,7 +43,6 @@ function App() {
          <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/introduce" element={<Introduce />} />
-            <Route path="/game1" element={<Game1 />} />
             <Route path="/login" element={<Login />} /> {/* Định nghĩa route cho login */}
          </Routes>
          {shouldShowHeaderFooter && <Footer />}

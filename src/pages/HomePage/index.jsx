@@ -232,8 +232,11 @@ export default function HomePage() {
                   </SwiperSlide>
                </Swiper>
                <div className="play__now">
-                  <p className="play__now-link">PLAY NOW</p>
+                  <a href="https://hnhngc.github.io/final-project.github.io/NewGame%202/index.html" className="play__now-link">
+                     PLAY NOW
+                  </a>
                </div>
+
                <div className="collection" style={{ marginTop: "-24px" }}>
                   <div className="collection__slideshow">
 
@@ -290,7 +293,9 @@ export default function HomePage() {
                                              <p className="fw-lighter" style={{ marginBottom: 0 }}>{item.genre}</p>
                                           </div>
                                           <div className="item__icon ">
-                                             <span><i className="fa-solid fa-play fa-xl" style={{ color: '#FFFFFF', marginRight: '8px' }} /></span>
+                                             <span onClick={() => window.location.href = "https://hnhngc.github.io/final-project.github.io/NewGame%202/index.html"}>
+                                                <i className="fa-solid fa-play fa-xl" style={{ color: '#FFFFFF', marginRight: '8px' }} />
+                                             </span>
                                              <span><i className="fa-regular fa-heart fa-xl" style={{ color: '#ffffff' }} /></span>
                                           </div>
                                        </div>
@@ -324,7 +329,9 @@ export default function HomePage() {
                                              <p className="fw-lighter" style={{ marginBottom: 0 }}>{item.tag}</p>
                                           </div>
                                           <div className="item__icon ">
-                                             <span><i className="fa-solid fa-play fa-xl" style={{ color: '#FFFFFF', marginRight: '8px' }} /></span>
+                                             <span onClick={() => window.location.href = "https://lemytruc.github.io/Game2/puzzle-master/index.html"}>
+                                                <i className="fa-solid fa-play fa-xl" style={{ color: '#FFFFFF', marginRight: '8px' }} />
+                                             </span>
                                              <span><i className="fa-regular fa-heart fa-xl" style={{ color: '#ffffff' }} /></span>
                                           </div>
                                        </div>
@@ -368,7 +375,9 @@ export default function HomePage() {
                                              <p className="fw-lighter" style={{ marginBottom: 0 }}>{item.tag}</p>
                                           </div>
                                           <div className="item__icon ">
-                                             <span><i className="fa-solid fa-play fa-xl" style={{ color: '#FFFFFF', marginRight: '8px' }} /></span>
+                                             <span onClick={() => window.location.href = "https://thienhuong320.github.io/Game3/"}>
+                                                <i className="fa-solid fa-play fa-xl" style={{ color: '#FFFFFF', marginRight: '8px' }} />
+                                             </span>
                                              <span><i className="fa-regular fa-heart fa-xl" style={{ color: '#ffffff' }} /></span>
                                           </div>
                                        </div>
