@@ -2,7 +2,7 @@ import axiosClient from "./axiosClient";
 
 const ScoreApi = {
     getAll(){
-        const url = "/score/getall";
+        const url = "/scores/getall";
         return axiosClient.get(url);
     },
 

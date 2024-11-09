@@ -1,225 +1,166 @@
 /* Header styles */
 .header {
-    position: relative;
-    z-index: 1000; 
+   position: relative;
+   z-index: 1000;
 }
 
-
 .header .header_top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 25px;
-    position: fixed; /* Đặt vị trí cố định */
-    background-color: #1e272e;
-    position: fixed; /* Đặt vị trí cố định */
-    top: 0; /* Đặt ở phía trên cùng */
-    left: 0;
-    right: 0;
-    z-index: 1000; /* Đảm bảo header nằm trên các phần tử khác */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ để tạo chiều sâu */
-    transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động */
-    
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 25px;
+   /* Đặt vị trí cố định */
+   background-color: #1e272e;
+   position: fixed;
+   /* Đặt vị trí cố định */
+   top: 0;
+   /* Đặt ở phía trên cùng */
+   left: 0;
+   right: 0;
+   /* z-index: 1000; */
+   /* Đảm bảo header nằm trên các phần tử khác */
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   /* Đổ bóng nhẹ để tạo chiều sâu */
+   transition: all 0.3s ease;
+   /* Thêm hiệu ứng chuyển động */
+
 }
 
 
 .header .header_top .scrolled {
-    background-color: rgba(255, 255, 255, 0.9); /* Màu nền khi cuộn */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bóng lớn hơn khi cuộn */
+   background-color: rgba(255, 255, 255, 0.9);
+   /* Màu nền khi cuộn */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   /* Bóng lớn hơn khi cuộn */
 }
+
 .header .header_top .header_right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
 }
 
-.header .header_top .header_right  .search_game {
-    display: flex;
-    align-items: center;
-    margin-right: 25px; /* Thay đổi khoảng cách */
-    padding: 8px 8px;
-    background-color: #3B3D4E;
-    border-radius: 15px;
-    color:#ffffff
-
+.header .header_top .header_right .search_game {
+   display: flex;
+   align-items: center;
+   margin-right: 25px;
+   /* Thay đổi khoảng cách */
+   padding: 8px 8px;
+   background-color: #3B3D4E;
+   border-radius: 15px;
+   color: #ffffff
 }
 
-.header .header_top .header_right  .search_game span{
-    padding-left: 5px;
+.header .header_top .header_right .search_game span {
+   padding-left: 5px;
 }
-.header .header_top .header_right  .search_game input[type='text']{
-    border: none;
-    background-color: transparent;
-    outline: none;
-    margin-left: 5px;
-    color:#fff
-    
+
+.header .header_top .header_right .search_game input[type='text'] {
+   border: none;
+   background-color: transparent;
+   outline: none;
+   margin-left: 5px;
+   color: #fff
 }
+
 .header .logo {
-    width: 80px; /* Điều chỉnh kích thước logo */
-    height: 50px;
-    
+   width: 80px;
+   /* Điều chỉnh kích thước logo */
+   height: 50px;
+
 }
 
 .header .logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Giữ tỷ lệ cho logo */
-}
-.header .header_top .header_right .favourites{
-    padding: 6px 10px;
-    border-radius: 50px 50px;
-    border: 1px solid white;
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   /* Giữ tỷ lệ cho logo */
 }
 
-.header .header_top .header_right .favourites span{
-    color: #ffffff;
+.header .header_top .header_right .favourites {
+   padding: 6px 10px;
+   border-radius: 50px 50px;
+   border: 1px solid white;
 }
 
-.header .header_top .header_right .profile{
-    margin-left: 10px;
+.header .header_top .header_right .favourites span {
+   color: #ffffff;
 }
 
-.navbar {
-    display: flex;
+.header .header_top .header_right .profile {
+   margin-left: 10px;
+}
+
+.navbar-header {
+   display: flex;
+   width: 33%;
+}
+
+.navbar-nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .nav-link {
-    color: #ffffff; /* Đổi màu chữ */
-    font-weight: 700;
-    font-size: 20px; /* Giảm kích thước chữ */
-    margin: 0 20px; /* Tăng khoảng cách giữa các liên kết */
-    transition: color 0.3s, transform 0.3s; /* Hiệu ứng chuyển màu và phóng to */
+   color: #ffffff;
+   /* Đổi màu chữ */
+   font-weight: 700;
+   font-size: 20px;
+   /* Giảm kích thước chữ */
+   margin: 0 20px;
+   /* Tăng khoảng cách giữa các liên kết */
+   transition: color 0.3s, transform 0.3s;
+   /* Hiệu ứng chuyển màu và phóng to */
 }
 
 .nav-link:hover {
-    color: #ffcc00; /* Màu hover cho các liên kết */
-    transform: translateY(-3px); /* Di chuyển lên một chút khi hover */
+   color: #ffcc00;
+   /* Màu hover cho các liên kết */
+   transform: translateY(-3px);
+   /* Di chuyển lên một chút khi hover */
 }
 
+.logo {
+   flex-grow: 1;
+}
+
+.navbar-header {
+   flex-grow: 2;
+}
+
+.header_right {
+   flex-grow: 3;
+}
+
+.nav-item .btn {
+   margin-top: unset;
+   width: 150px;
+}
 
 .swiper {
-    height: 338px;
-    overflow: hidden; /* Ẩn phần bên ngoài */
-   
+   height: 338px;
+   overflow: hidden;
+   /* Ẩn phần bên ngoài */
+
 }
 
 .swiper-slide {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s; /* Hiệu ứng chuyển tiếp */
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: transform 0.3s;
+   /* Hiệu ứng chuyển tiếp */
 }
 
 
 
-.swiper-slide  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px; /* Thêm bo tròn cho hình ảnh */
-}
-
-.autoplay-progress {
-    position: absolute;
-    right: 16px;
-    bottom: 16px;
-    z-index: 10;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: #fff; /* Đổi màu văn bản */
-}
-
-.autoplay-progress svg {
-    --progress: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    stroke-width: 4px;
-    stroke: #ff4081; /* Đổi màu đường viền */
-    fill: none;
-    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
-    stroke-dasharray: 125.6;
-    transform: rotate(-90deg);
-}
-
-
-.banner{
-    position: relative;
-    z-index: 100;
-    margin-top: 98px;
-}
-
-.banner .play__now{
-    position: absolute;
-    top: 25%;
-    left: 15%;
-    z-index: 99;
-}
- 
-.banner .play__now .play__now-link {
-    background-color: #015F69;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 12px 32px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.banner .play__now .play__now-link:hover{
-    background-color: #1e272e;
-    transition: .5s ease-out all;
-
-}
-
-.banner .collection{
-    margin-top: 10px;
-    position: relative;
-    top: -100px;
-
-}
-
-.banner .collection .collection__slideshow{
-
-}
-
-.banner .collection .item{
-    background-color: #ADAAA6;
-    width: 219px;
-    height: 185px;
-    border-radius: 15px;
-
-}
-
-.banner .collection .item .item__img{
-    height: 135px;
-}
-
-.banner .collection .item__detail{
-    margin:  3px 12px;
-}
-.banner .collection .item .item__img img{
-    height: 100%;
-}
-
-.banner .collection .item  .item__detail .item__text {
-    font-size: 14px;
-    padding: 0;
-}
-
-.banner .collection .item  .item__detail .item__icon{
-    padding:10px 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.swiper-slide img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 10px;
+   /* Thêm bo tròn cho hình ảnh */
 }
