@@ -20,6 +20,7 @@
 
 // export default App;
 // src/App.js
+import React, { useEffect } from 'react'; // Import useEffect here
 import { Route, Routes, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
@@ -28,9 +29,17 @@ import Header from "./components/Header";
 import Login from "./pages/LoginPage/index";  // Đảm bảo bạn đã tạo trang này
 import Profile from "./pages/ProfilePage/profile";
 import SetProfile from "./pages/SetProfilePage/setprofile";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function App() {
+   useEffect(() => {
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true,     // Only animate once
+      });
+    }, []);
    const location = useLocation();
 
    // Định nghĩa mảng chứa các đường dẫn không cần Header/Footer

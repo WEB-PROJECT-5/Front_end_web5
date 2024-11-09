@@ -238,15 +238,12 @@ export default function HomePage() {
                </div>
 
                <div className="collection" style={{ marginTop: "-24px" }}>
-                  <div className="collection__slideshow">
+                  <div className="collection__slideshow" style={{ overflow: "hidden" }}>
 
                      <Swiper style={{ marginLeft: '130px' }}
                         // ID cho Swiper
-
-
                         spaceBetween={30} // Khoảng cách giữa các slide
                         slidesPerView={7} // Số lượng slide hiển thị
-
                      >
                         {/* Các slide */}
                         {listGame.map((item, index) => (
@@ -275,7 +272,7 @@ export default function HomePage() {
          <section className="container-xl">
             <div className="section box-sidebar">
                <div className=" row gx-5">
-                  <div className="main col-7">
+                  <div className="main col-md-6 col-lg-8">
                      {/* top  games */}
                      <div className={`bestgame ${isJumped ? 'jumped' : ''}`} ref={topGamePlayerRef}>
                         <p className="bestgame__title">Top games</p>
@@ -431,7 +428,7 @@ export default function HomePage() {
                         </div>
                      </div>
                   </div>
-                  <div className="sidebar  col-5">
+                  <div className="sidebar  sticky col-md-6 col-lg-4">
                      <div className="highscore">
                         <p className="highscore__title">Top Gamer
                         </p>

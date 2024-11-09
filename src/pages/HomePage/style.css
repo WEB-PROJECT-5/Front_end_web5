@@ -224,7 +224,13 @@
 
 
 }
-
+/* Respon swiper */
+@media (max-width: 991px) {
+   .collection__slideshow {
+     display: none;
+   }
+ }
+ 
 .banner .collection .collection__slideshow {
    overflow: hidden;
 }
