@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   /* Thiết lập kiểu dáng cho body */
   .signup {
     font-family: 'Poppins', sans-serif;
@@ -446,3 +447,230 @@
 
     }
   }
+=======
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* Áp dụng font Poppins cho tất cả các phần tử trên trang */
+* {
+  margin: 0; /* Xóa bỏ margin mặc định */
+  padding: 0; /* Xóa bỏ padding mặc định */
+  box-sizing: border-box; /* Đảm bảo rằng tất cả các phần tử có box-sizing là border-box */
+  font-family: 'Poppins', sans-serif; /* Sử dụng font chữ Poppins */
+}
+
+/* Container bao quanh form */
+.container {
+  height: 100vh; /* Chiều cao của container là 100% chiều cao màn hình */
+  width: 100%; /* Chiều rộng của container là 100% */
+  display: flex; /* Sử dụng flexbox để căn giữa */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  background-color: #4070f4; /* Màu nền của container */
+  column-gap: 30px; /* Khoảng cách giữa các phần tử con */
+}
+
+/* Style cho form đăng nhập và đăng ký */
+.form {
+  position: absolute; /* Đặt form ở vị trí tuyệt đối */
+  max-width: 430px; /* Chiều rộng tối đa của form */
+  width: 100%; /* Chiều rộng của form là 100% */
+  padding: 30px; /* Padding bên trong form */
+  border-radius: 6px; /* Bo góc form */
+  background: #FFF; /* Màu nền của form là trắng */
+}
+
+/* Form đăng ký mặc định bị ẩn */
+.form.signup {
+  opacity: 0; /* Đặt độ mờ của form là 0 */
+  pointer-events: none; /* Không cho phép tương tác với form đăng ký */
+}
+
+/* Hiển thị form đăng ký khi có lớp 'show-signup' */
+.forms.show-signup .form.signup {
+  opacity: 1; /* Đặt độ mờ của form là 1 */
+  pointer-events: auto; /* Cho phép tương tác với form đăng ký */
+}
+
+/* Ẩn form đăng nhập khi có lớp 'show-signup' */
+.forms.show-signup .form.login {
+  opacity: 0; /* Đặt độ mờ của form đăng nhập là 0 */
+  pointer-events: none; /* Không cho phép tương tác với form đăng nhập */
+}
+
+/* Style cho tiêu đề header */
+header {
+  font-size: 28px; /* Kích thước chữ của header */
+  font-weight: 600; /* Độ đậm chữ của header */
+  color: #232836; /* Màu chữ của header */
+  text-align: center; /* Căn giữa chữ */
+}
+
+/* Style cho form */
+form {
+  margin-top: 30px; /* Khoảng cách giữa form và header */
+}
+
+/* Style cho trường nhập liệu và button trong form */
+.form .field {
+  position: relative; /* Đặt trường nhập liệu ở vị trí tương đối */
+  height: 50px; /* Chiều cao của trường */
+  width: 100%; /* Chiều rộng của trường */
+  margin-top: 20px; /* Khoảng cách giữa các trường */
+  border-radius: 6px; /* Bo góc trường */
+}
+
+/* Style chung cho input và button */
+.field input,
+.field button {
+  height: 100%; /* Chiều cao của input và button */
+  width: 100%; /* Chiều rộng của input và button */
+  border: none; /* Xóa bỏ viền mặc định */
+  font-size: 16px; /* Kích thước chữ */
+  font-weight: 400; /* Độ đậm chữ */
+  border-radius: 6px; /* Bo góc input và button */
+}
+
+/* Style cho input */
+.field input {
+  outline: none; /* Xóa viền khi input được chọn */
+  padding: 0 15px; /* Padding trái phải cho input */
+  border: 1px solid#CACACA; /* Viền xám nhạt cho input */
+}
+
+/* Thay đổi border khi input được focus */
+.field input:focus {
+  border-bottom-width: 2px; /* Tăng độ dày của border phía dưới khi input focus */
+}
+
+/* Biểu tượng mắt để hiện/ẩn mật khẩu */
+.eye-icon {
+  position: absolute; /* Đặt biểu tượng ở vị trí tuyệt đối */
+  top: 50%; /* Căn giữa theo chiều dọc */
+  right: 10px; /* Cách bên phải 10px */
+  transform: translateY(-50%); /* Căn giữa hoàn hảo theo chiều dọc */
+  font-size: 18px; /* Kích thước của biểu tượng */
+  color: #8b8b8b; /* Màu xám cho biểu tượng */
+  cursor: pointer; /* Con trỏ thay đổi khi hover vào biểu tượng */
+  padding: 5px; /* Padding cho biểu tượng */
+}
+
+/* Style cho button */
+.field button {
+  color: #fff; /* Màu chữ trắng cho button */
+  background-color: #0171d3; /* Màu nền xanh dương cho button */
+  transition: all 0.3s ease; /* Hiệu ứng chuyển động cho button */
+  cursor: pointer; /* Con trỏ thay đổi khi hover vào button */
+}
+
+/* Hiệu ứng khi hover vào button */
+.field button:hover {
+  background-color: #016dcb; /* Màu nền thay đổi khi hover */
+}
+
+/* Style cho liên kết giữa form đăng nhập và đăng ký */
+.form-link {
+  text-align: center; /* Căn giữa văn bản */
+  margin-top: 10px; /* Khoảng cách trên của liên kết */
+}
+
+/* Style cho các phần tử trong form-link */
+.form-link span,
+.form-link a {
+  font-size: 14px; /* Kích thước chữ */
+  font-weight: 400; /* Độ đậm chữ */
+  color: #232836; /* Màu chữ */
+}
+
+/* Style cho các liên kết */
+.form a {
+  color: #0171d3; /* Màu chữ xanh dương */
+  text-decoration: none; /* Xóa gạch chân */
+}
+
+/* Hiệu ứng khi hover vào liên kết */
+.form-content a:hover {
+  text-decoration: underline; /* Gạch chân khi hover */
+}
+
+/* Line phân cách giữa các phần tử */
+.line {
+  position: relative; /* Đặt line ở vị trí tương đối */
+  height: 1px; /* Chiều cao của line */
+  width: 100%; /* Chiều rộng của line */
+  margin: 36px 0; /* Khoảng cách trên và dưới của line */
+  background-color: #d4d4d4; /* Màu nền của line */
+}
+
+/* Đặt chữ 'Or' vào giữa line */
+.line::before {
+  content: 'Or'; /* Nội dung là chữ 'Or' */
+  position: absolute; /* Đặt chữ ở vị trí tuyệt đối */
+  top: 50%; /* Căn giữa theo chiều dọc */
+  left: 50%; /* Căn giữa theo chiều ngang */
+  transform: translate(-50%, -50%); /* Căn giữa hoàn hảo */
+  background-color: #FFF; /* Màu nền trắng cho chữ */
+  color: #8b8b8b; /* Màu chữ xám */
+  padding: 0 15px; /* Padding trái và phải cho chữ */
+}
+
+/* Style cho các liên kết mạng xã hội */
+.media-options a {
+  display: flex; /* Dùng flexbox để căn giữa */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+}
+
+/* Liên kết Facebook */
+a.facebook {
+  color: #fff; /* Màu chữ trắng */
+  background-color: #4267b2; /* Màu nền Facebook */
+}
+
+/* Biểu tượng Facebook */
+a.facebook .facebook-icon {
+  height: 28px; /* Chiều cao biểu tượng Facebook */
+  width: 28px; /* Chiều rộng biểu tượng Facebook */
+  color: #0171d3; /* Màu chữ của biểu tượng */
+  font-size: 20px; /* Kích thước chữ của biểu tượng */
+  border-radius: 50%; /* Bo góc thành hình tròn */
+  display: flex; /* Dùng flexbox để căn giữa */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  background-color: #fff; /* Màu nền trắng cho biểu tượng */
+}
+
+/* Biểu tượng Facebook và ảnh Google */
+.facebook-icon,
+img.google-img {
+  position: absolute; /* Đặt biểu tượng ở vị trí tuyệt đối */
+  top: 50%; /* Căn giữa theo chiều dọc */
+  left: 15px; /* Cách bên trái 15px */
+  transform: translateY(-50%); /* Căn giữa hoàn hảo theo chiều dọc */
+}
+
+/* Ảnh Google */
+img.google-img {
+  height: 20px; /* Chiều cao ảnh Google */
+  width: 20px; /* Chiều rộng ảnh Google */
+  object-fit: cover; /* Đảm bảo ảnh được cắt vừa khít */
+}
+
+/* Liên kết Google */
+a.google {
+  border: 1px solid #CACACA; /* Viền xám nhạt cho liên kết Google */
+}
+
+/* Mô tả cho liên kết Google */
+a.google span {
+  font-weight: 500; /* Độ đậm chữ */
+  opacity: 0.6; /* Độ mờ chữ */
+  color: #232836; /* Màu chữ xám đen */
+}
+
+/* Responsive cho màn hình nhỏ */
+@media screen and (max-width: 400px) {
+  .form {
+    padding: 20px 10px; /* Giảm padding cho form khi màn hình nhỏ */
+  }
+}
+>>>>>>> 50f68da386b4d124be961d11d3bd1e484ca33582

@@ -1,21 +1,48 @@
 import React from 'react';
+// Nhập thư viện React để xây dựng giao diện.
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+// Nhập CSS của Bootstrap, giúp trang có phong cách giao diện mặc định với các thành phần Bootstrap.
+
 import 'aos/dist/aos.css';
-import 'swiper/css'; // For default Swiper styles
-import 'swiper/css/pagination'; // For pagination styles
-import 'swiper/css/navigation'; // For navigation styles
+// Nhập CSS của thư viện AOS (Animate on Scroll), cung cấp hiệu ứng khi cuộn trang.
+
+import 'swiper/css';
+// Nhập CSS mặc định của Swiper, giúp thiết lập phong cách cho trình chiếu ảnh.
+
+import 'swiper/css/pagination';
+// Nhập CSS cho chức năng phân trang của Swiper.
+
+import 'swiper/css/navigation';
+// Nhập CSS cho chức năng điều hướng của Swiper.
+
 import 'font-awesome/css/font-awesome.min.css';
+// Nhập thư viện Font Awesome để có thể sử dụng các biểu tượng (icon) phổ biến.
+
 import './introduce.css';
+// Nhập CSS tùy chỉnh cho trang Introduce, dùng để bổ sung phong cách riêng cho các thành phần giao diện.
+
 import AOS from 'aos';
+// Nhập thư viện AOS (Animate on Scroll), cung cấp các hiệu ứng khi cuộn trang.
+
 import Swiper from 'swiper';
-// import magicMouse from 'magicmouse.js';
-import logoMini from '../../assets/Image/Trang/LOGO_MINI.png'
+// Nhập thư viện Swiper cho trình chiếu ảnh.
+
+import logoMini from '../../assets/Image/Trang/LOGO_MINI.png';
+// Nhập ảnh logo nhỏ dùng trong header của trang.
+
 import logoMini3 from '../../assets/Image/Trang/LOGO_MINI3.png';
+// Nhập ảnh logo nhỏ cho footer của trang.
+
 import avatar3 from '../../assets/Image/Trang/Avatar3.jpg';
-// import avatar4 from '../../assets/Image/Trang/Avatar4.jpg';
-// import avatar5 from '../../assets/Image/Trang/Avatar5.jpg';
+// Nhập ảnh đại diện của tác giả đầu tiên.
+
 import thumbnail1 from '../../assets/Image/Trang/BeGreen5.png';
+// Nhập ảnh thumbnail cho banner chính của trang.
+
 import picGame1 from '../../assets/Image/Trang/Hình_Game/10.jpg';
+// Nhập ảnh cho slide game đầu tiên trong danh sách trình chiếu.
+
 import picGame2 from '../../assets/Image/Trang/Hình_Game/17.jpg';
 import picGame3 from '../../assets/Image/Trang/Hình_Game/18.jpg';
 import picGame4 from '../../assets/Image/Trang/Hình_Game/11.jpg';
@@ -24,7 +51,12 @@ import picGame6 from '../../assets/Image/Trang/Hình_Game/13.jpg';
 import picGame7 from '../../assets/Image/Trang/Hình_Game/14.jpg';
 import picGame8 from '../../assets/Image/Trang/Hình_Game/15.jpg';
 import picGame9 from '../../assets/Image/Trang/Hình_Game/16.jpg';
+// Nhập ảnh cho các slide khác nhau trong danh sách game trình chiếu.
+
 import leaf from '../../assets/Image/Trang/tải xuống.gif';
+// Nhập ảnh động chiếc lá để tạo hiệu ứng trang trí động trên trang.
+
+
 
 class Introduce extends React.Component {
    componentDidMount() {
