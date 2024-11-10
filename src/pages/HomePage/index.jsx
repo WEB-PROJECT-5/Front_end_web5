@@ -198,7 +198,7 @@ export default function HomePage() {
    return (
       <div className='home'>
          <section>
-            <div className="banner ">
+            <div className="banner5 ">
 
                <Swiper
                   modules={[Autoplay]}
@@ -208,27 +208,27 @@ export default function HomePage() {
                   }}
                   spaceBetween={50}
                   slidesPerView={5}
-                  className='banner-first'
+                  className='banner-first5'
                >
                   <SwiperSlide style={{ height: "220px" }}>
-                     <div className="swiper-slide">
+                     <div className="swiper-slide5">
                         <img src="https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/173789/Originals/Tro-choi-mien-phi-khong-tai-ve-may-0.jpg" />
                      </div>
                   </SwiperSlide>
                   <SwiperSlide style={{ height: "220px" }}>
-                     <div className="swiper-slide"><img src="https://baobariavungtau.com.vn/dataimages/202301/original/images1778766_11M_1.jpeg" /></div>
+                     <div className="swiper-slide5"><img src="https://baobariavungtau.com.vn/dataimages/202301/original/images1778766_11M_1.jpeg" /></div>
                   </SwiperSlide>
                   <SwiperSlide style={{ height: "220px" }}>
-                     <div className="swiper-slide"><img src="https://st.gamevui.vn/images/image/2024/01/12/ban-hop-voi-nhan-vat-nao-trong-mario-10.jpg" /></div>
+                     <div className="swiper-slide5"><img src="https://st.gamevui.vn/images/image/2024/01/12/ban-hop-voi-nhan-vat-nao-trong-mario-10.jpg" /></div>
                   </SwiperSlide>
                   <SwiperSlide style={{ height: "220px" }}>
-                     <div className="swiper-slide"><img src="https://st.gamevui.vn/images/image/2022/02/21/bieu-ngu-minecraft-1.jpg" /></div>
+                     <div className="swiper-slide5"><img src="https://st.gamevui.vn/images/image/2022/02/21/bieu-ngu-minecraft-1.jpg" /></div>
                   </SwiperSlide>
                   <SwiperSlide style={{ height: "220px" }}>
-                     <div className="swiper-slide"><img src="https://baobariavungtau.com.vn/dataimages/202301/original/images1778766_11M_1.jpeg" /></div>
+                     <div className="swiper-slide5"><img src="https://baobariavungtau.com.vn/dataimages/202301/original/images1778766_11M_1.jpeg" /></div>
                   </SwiperSlide>
                   <SwiperSlide style={{ height: "220px" }}>
-                     <div className="swiper-slide"><img src="https://st.gamevui.vn/images/image/2024/01/12/ban-hop-voi-nhan-vat-nao-trong-mario-10.jpg" /></div>
+                     <div className="swiper-slide5"><img src="https://st.gamevui.vn/images/image/2024/01/12/ban-hop-voi-nhan-vat-nao-trong-mario-10.jpg" /></div>
                   </SwiperSlide>
                </Swiper>
                <div className="play__now">

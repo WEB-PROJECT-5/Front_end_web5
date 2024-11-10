@@ -128,13 +128,13 @@
 }
 
 
-.swiper {
+.swiper5 {
    overflow: hidden;
    /* Ẩn phần bên ngoài */
 
 }
 
-.swiper-slide {
+.swiper-slide5 {
    text-align: center;
    display: flex;
    justify-content: center;
@@ -145,7 +145,7 @@
 
 
 
-.swiper-slide img {
+.swiper-slide5 img {
    display: block;
    width: 100%;
    height: 100%;
@@ -187,7 +187,7 @@
 }
 
 
-.banner {
+.banner5 {
    position: relative;
    z-index: 100;
    height: 800px;
@@ -195,14 +195,14 @@
 }
 
 
-.banner .play__now {
+.banner5 .play__now {
    position: absolute;
    top: 25%;
    left: 15%;
    z-index: 99;
 }
 
-.banner .play__now .play__now-link {
+.banner5 .play__now .play__now-link {
    background-color: #015F69;
    color: #FFFFFF;
    font-weight: 600;
@@ -212,30 +212,31 @@
    cursor: pointer;
 }
 
-.banner .play__now .play__now-link:hover {
+.banner5 .play__now .play__now-link:hover {
    background-color: #1e272e;
    transition: .5s ease-out all;
 
 }
 
-.banner .collection {
+.banner5 .collection {
 
    position: relative;
 
 
 }
+
 /* Respon swiper */
 @media (max-width: 991px) {
    .collection__slideshow {
-     display: none;
+      display: none;
    }
- }
- 
-.banner .collection .collection__slideshow {
+}
+
+.banner5 .collection .collection__slideshow {
    overflow: hidden;
 }
 
-.banner .collection .item {
+.banner5 .collection .item {
    background-color: #ADAAA6;
    width: 219px;
    height: 185px;
@@ -243,12 +244,12 @@
 
 }
 
-.banner .collection .item .item__img {
+.banner5 .collection .item .item__img {
    height: 135px;
    width: 100%;
 }
 
-.banner .collection .item__detail {
+.banner5 .collection .item__detail {
 
    display: flex;
    justify-content: space-between;
@@ -256,18 +257,18 @@
 
 }
 
-.banner .collection .item .item__img img {
+.banner5 .collection .item .item__img img {
    height: 100%;
 
 }
 
-.banner .collection .item .item__detail .item__text {
+.banner5 .collection .item .item__detail .item__text {
    font-size: 12px;
 
    text-align: left;
 }
 
-.banner .collection .item .item__detail .item__icon {
+.banner5 .collection .item .item__detail .item__icon {
    padding: 0px 5px;
    display: flex;
    align-items: center;
