@@ -6,6 +6,7 @@ Phát triển website trò chơi mang tên UEH Discovery với mục tiêu phát
 
 ## Tài khoản user 
 Tên đăng nhập: john.doe
+
 Mật khẩu: jD@123
 
 ## Link public front_end
