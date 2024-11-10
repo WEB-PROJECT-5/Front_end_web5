@@ -50,6 +50,7 @@ export default function Header() {
                         <ul className="dropdown-menu" style={{ marginTop: '30px' }}>
                            <li><a className="dropdown-item" href="/profile">Profile</a></li>
                            <li><a className="dropdown-item" href="/profile/setprofile">Settings</a></li>
+                           <li><a className="dropdown-item" href="/login">Login</a></li>
                         </ul>
                      </div>
                   </div>
