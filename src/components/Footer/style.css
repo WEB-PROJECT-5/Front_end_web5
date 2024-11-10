@@ -1,77 +1,73 @@
 .footer{
-    margin-top: 131px;
-    color:aliceblue
+    margin-top: 131px;  /* Đặt khoảng cách từ phía trên cho phần footer */
+    color: aliceblue;  /* Màu chữ cho phần footer */
 }
 
 .footer .footer-logo .footer-text{
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 20px;
+    font-size: 14px;  /* Cỡ chữ cho văn bản mô tả trong phần footer */
+    font-weight: 500;  /* Độ đậm chữ vừa phải cho văn bản mô tả */
+    margin-top: 20px;  /* Khoảng cách phía trên cho văn bản mô tả */
 }
 
 .footer .footer-item {
-    
+    /* Phần này không có thuộc tính đặc biệt, có thể mở rộng sau */
 }
 
 .footer .footer-item h4{
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 18px;  /* Cỡ chữ cho tiêu đề mục trong footer */
+    font-weight: 600;  /* Độ đậm chữ cho tiêu đề mục trong footer */
 }
 
 .footer .footer-item .footer-item-list{
-    margin-top: 15px;
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    justify-content: end;
-    gap:12px;
-    margin-bottom: 0;
+    margin-top: 15px;  /* Khoảng cách phía trên cho danh sách các mục trong footer */
+    list-style: none;  /* Loại bỏ dấu chấm đầu dòng trong danh sách */
+    padding-left: 0;  /* Loại bỏ lề trái cho danh sách */
+    display: flex;  /* Sử dụng Flexbox để căn chỉnh các mục trong danh sách */
+    flex-direction: column;  /* Xếp các mục theo chiều dọc */
+    justify-content: flex-end;  /* Căn các mục ở cuối danh sách */
+    gap: 12px;  /* Khoảng cách giữa các mục trong danh sách */
+    margin-bottom: 0;  /* Loại bỏ khoảng cách dưới cùng */
 }
 
 .footer .footer-item .footer-item-list li{
-    font-size: 14px;
+    font-size: 14px;  /* Cỡ chữ cho từng mục trong danh sách */
 }
 
-
 .footer .footer-item .footer-contact{
-    margin-top: 15px;
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-   justify-content: flex-start;
-    align-items: start;
-    gap:12px;
-    margin-bottom: 0;
-    width: 90%;
+    margin-top: 15px;  /* Khoảng cách phía trên cho danh sách thông tin liên hệ */
+    list-style: none;  /* Loại bỏ dấu chấm đầu dòng trong danh sách */
+    padding-left: 0;  /* Loại bỏ lề trái cho danh sách */
+    display: flex;  /* Sử dụng Flexbox để căn chỉnh các mục trong danh sách */
+    flex-direction: column;  /* Xếp các mục theo chiều dọc */
+    justify-content: flex-start;  /* Căn các mục ở đầu danh sách */
+    align-items: start;  /* Căn các mục bắt đầu từ phía trái */
+    gap: 12px;  /* Khoảng cách giữa các mục trong danh sách */
+    margin-bottom: 0;  /* Loại bỏ khoảng cách dưới cùng */
+    width: 90%;  /* Chiều rộng của danh sách liên hệ */
 }
 
 .footer .footer-item .footer-contact li{
-    font-size: 14px;
+    font-size: 14px;  /* Cỡ chữ cho từng mục trong danh sách liên hệ */
 }
 
 .footer .footer-item .footer-social{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: end;
-    padding-left: 0;
-    
-    /* gap:12px; */
+    list-style: none;  /* Loại bỏ dấu chấm đầu dòng cho danh sách mạng xã hội */
+    display: flex;  /* Sử dụng Flexbox để căn chỉnh các biểu tượng mạng xã hội */
+    justify-content: space-around;  /* Căn đều các biểu tượng mạng xã hội */
+    align-items: end;  /* Căn các biểu tượng ở dưới cùng */
+    padding-left: 0;  /* Loại bỏ lề trái cho danh sách */
+    /* gap: 12px;  Khoảng cách giữa các mục mạng xã hội (bình luận không sử dụng) */
 }
 
- .copyright{
-    text-align: center;
-    margin-top:30px;
-    margin-bottom:30px;
-    padding-bottom: 30px;
+.copyright{
+    text-align: center;  /* Căn giữa phần văn bản bản quyền */
+    margin-top: 30px;  /* Khoảng cách phía trên cho phần bản quyền */
+    margin-bottom: 30px;  /* Khoảng cách phía dưới cho phần bản quyền */
+    padding-bottom: 30px;  /* Padding dưới cùng cho phần bản quyền */
 }
 
 .copyright .copyright-text{
-    font-size: 14px;
-    font-weight: 300;
-    margin-bottom: 0;
+    font-size: 14px;  /* Cỡ chữ cho văn bản bản quyền */
+    font-weight: 300;  /* Độ đậm chữ nhẹ cho văn bản bản quyền */
+    margin-bottom: 0;  /* Loại bỏ khoảng cách dưới cùng cho văn bản bản quyền */
 }
-
