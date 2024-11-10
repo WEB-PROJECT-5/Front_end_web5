@@ -69,6 +69,7 @@ export default function Header() {
                            <li><a className="dropdown-item" href="/profile">Profile</a></li>
                            {/* Mục Settings */}
                            <li><a className="dropdown-item" href="/profile/setprofile">Settings</a></li>
+                           <li><a className="dropdown-item" href="/login">Login</a></li>
                         </ul>
                      </div>
                   </div>
