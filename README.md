@@ -4,8 +4,11 @@ Tên đề tài: Phát triển ứng dụng website trò chơi (UEH Discovery)
 ## Mô tả
 Phát triển website trò chơi mang tên UEH Discovery với mục tiêu phát triển một website không chỉ mang lại trải nghiệm giải trí, học tập mà còn giúp nâng cao ý thức bảo vệ môi trường trong cộng đồng sinh viên UEH và giới thiệu về UEH.
 
-## Link public 
+## Link public front_end
 front-end-web5.vercel.app
+
+## Host Backend public
+https://be-up-host.onrender.com
 
 ## Tác giả
 - Phan Trần Thiên Hương: https://github.com/thienhuong320
