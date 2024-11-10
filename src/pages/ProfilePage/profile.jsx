@@ -19,33 +19,33 @@ const Profile = () => {
 
     return (
         <div>
-            <div className="header">
-                <i className="fas fa-arrow-left"></i>
+            <div className="header1">
+                <i className="fas fa-arrow-left1"></i>
                 Profile
             </div>
-            <div className="profile-section">
-                <div className="profile-card">
-                    <i className="fas fa-cog settings-icon" onClick={toggleSettingsMenu}></i>
-                    <div className="settings-menu" id="settingsMenu">
+            <div className="profile-section1">
+                <div className="profile-card1">
+                    <i className="fas fa-cog settings-icon1" onClick={toggleSettingsMenu}></i>
+                    <div className="settings-menu1" id="settingsMenu">
                         <a href="#">Quản lí tài khoản</a>
                         <a href="#">Đăng xuất</a>
                     </div>
-                    <img src="./avata.jpg" alt="Profile picture of a person with long black hair and a serious expression" width="100" height="100" />
+                    <img src="https://i.postimg.cc/Y9npzLwy/ygmfpeympiidkfqsbvb5.png" alt="Profile picture of a person with long black hair and a serious expression" width="100" height="100" />
 
                     <h2>HUONG</h2>
                     <p>Add a short bio</p>
                 </div>
             </div>
-            <div className="tabs">
-                <div className="active" id="aboutMe" onClick={() => setActiveTab('aboutMe')}>About Me</div>
+            <div className="tabs1">
+                <div className="active1" id="aboutMe" onClick={() => setActiveTab('aboutMe')}>About Me</div>
                 <div id="myRewards" onClick={() => setActiveTab('myRewards')}>My Rewards</div>
                 <div id="history" onClick={() => setActiveTab('history')}>History</div>
             </div>
-            <div className="content">
-                <div className="box" id="aboutMeContent">
+            <div className="content1">
+                <div className="box1" id="aboutMeContent">
                     <h3>About Me <i className="fas fa-pencil-alt"></i></h3>
                 </div>
-                <div className="box" id="myRewardsContent" style={{ display: 'none' }}>
+                <div className="box1" id="myRewardsContent" style={{ display: 'none' }}>
                     <h3>My Rewards</h3>
                     <ul>
                         <li>Reward 1</li>
@@ -53,7 +53,7 @@ const Profile = () => {
                         <li>Reward 3</li>
                     </ul>
                 </div>
-                <div className="box" id="historyContent" style={{ display: 'none' }}>
+                <div className="box1" id="historyContent" style={{ display: 'none' }}>
                     <h3>History</h3>
                     <ul>
                         <li>History Item 1</li>

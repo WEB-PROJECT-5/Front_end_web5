@@ -1,168 +1,448 @@
-/* Google Fonts - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-.container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #4070f4;
-  column-gap: 30px;
-}
-.form {
-  position: absolute;
-  max-width: 430px;
-  width: 100%;
-  padding: 30px;
-  border-radius: 6px;
-  background: #FFF;
-}
-.form.signup {
-  opacity: 0;
-  pointer-events: none;
-}
-.forms.show-signup .form.signup {
-  opacity: 1;
-  pointer-events: auto;
-}
-.forms.show-signup .form.login {
-  opacity: 0;
-  pointer-events: none;
-}
-header {
-  font-size: 28px;
-  font-weight: 600;
-  color: #232836;
-  text-align: center;
-}
-form {
-  margin-top: 30px;
-}
-.form .field {
-  position: relative;
-  height: 50px;
-  width: 100%;
-  margin-top: 20px;
-  border-radius: 6px;
-}
-.field input,
-.field button {
-  height: 100%;
-  width: 100%;
-  border: none;
-  font-size: 16px;
-  font-weight: 400;
-  border-radius: 6px;
-}
-.field input {
-  outline: none;
-  padding: 0 15px;
-  border: 1px solid#CACACA;
-}
-.field input:focus {
-  border-bottom-width: 2px;
-}
-.eye-icon {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  font-size: 18px;
-  color: #8b8b8b;
-  cursor: pointer;
-  padding: 5px;
-}
-.field button {
-  color: #fff;
-  background-color: #0171d3;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-.field button:hover {
-  background-color: #016dcb;
-}
-.form-link {
-  text-align: center;
-  margin-top: 10px;
-}
-.form-link span,
-.form-link a {
-  font-size: 14px;
-  font-weight: 400;
-  color: #232836;
-}
-.form a {
-  color: #0171d3;
-  text-decoration: none;
-}
-.form-content a:hover {
-  text-decoration: underline;
-}
-.line {
-  position: relative;
-  height: 1px;
-  width: 100%;
-  margin: 36px 0;
-  background-color: #d4d4d4;
-}
-.line::before {
-  content: 'Or';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #FFF;
-  color: #8b8b8b;
-  padding: 0 15px;
-}
-.media-options a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-a.facebook {
-  color: #fff;
-  background-color: #4267b2;
-}
-a.facebook .facebook-icon {
-  height: 28px;
-  width: 28px;
-  color: #0171d3;
-  font-size: 20px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-}
-.facebook-icon,
-img.google-img {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-}
-img.google-img {
-  height: 20px;
-  width: 20px;
-  object-fit: cover;
-}
-a.google {
-  border: 1px solid #CACACA;
-}
-a.google span {
-  font-weight: 500;
-  opacity: 0.6;
-  color: #232836;
-}
-@media screen and (max-width: 400px) {
-  .form {
-    padding: 20px 10px;
+  /* Thiết lập kiểu dáng cho body */
+  .signup {
+    font-family: 'Poppins', sans-serif;
+    /* Áp dụng font cho toàn bộ nội dung */
+    background-color: #00282c;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
-}
+
+  /* Container chính cho form đăng ký */
+  .register-container3 {
+    width: 100vw;
+    /* Chiều rộng toàn trang */
+    height: 100vh;
+    /* Chiều cao toàn trang */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Container cho logo */
+  .logo-container3 {
+    text-align: center;
+    /* Căn giữa logo theo chiều ngang */
+    margin-bottom: 30px;
+    /* Khoảng cách giữa logo và tiêu đề */
+  }
+
+  /* Định dạng hình ảnh logo */
+  .logo-container3 img {
+    max-width: 250px;
+    /* Điều chỉnh kích thước logo phù hợp */
+    height: auto;
+    /* Giữ tỉ lệ chiều cao */
+  }
+
+  /* Container cho form đăng ký */
+  .form-container3 {
+    background-color: #00282c;
+    padding: 40px;
+    /* Tăng padding để giãn nội dung */
+    width: 100vw;
+    /* Tràn toàn màn hình */
+    height: 100vh;
+    /* Chiều cao full form */
+    box-shadow: none;
+    /* Không bóng */
+  }
+
+  /* Tiêu đề trong form */
+  h2 {
+    text-align: left;
+    margin-bottom: 0px;
+    /* Tăng khoảng cách dưới tiêu đề */
+    font-size: 14px;
+    /* Điều chỉnh kích thước chữ */
+    font-weight: bold;
+    /* Đặt chữ in đậm */
+    color: #ffffff;
+    /* Thay đổi màu chữ nếu cần */
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Lưới cho form */
+  .form-grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    /* Khoảng cách giữa hai cột */
+    width: 60%;
+    /* Giữ nguyên chiều rộng của form */
+    margin: 0 auto;
+    /* Căn giữa toàn bộ form */
+    align-items: stretch;
+    /* Đảm bảo chiều cao bằng nhau */
+    padding-left: 100px;
+    /* Thêm khoảng cách để đảm bảo căn đối với cạnh */
+    padding-right: 0px;
+    /* Thêm khoảng cách để đảm bảo căn đối với cạnh */
+
+  }
+
+  /* Nhóm form cho các trường nhập liệu */
+  .form-group3 {
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+    /* Căn giữa nhãn và ô nhập liệu */
+    margin: 0 5px;
+    /* Khoảng cách bên trái và bên phải cho mỗi nhóm */
+  }
+
+  /* Lựa chọn ngày tháng năm sinh */
+  .birthdate-select3 {
+    display: flex;
+    gap: 10px;
+    /* Khoảng cách giữa các select */
+  }
+
+  /* Định dạng các ô chọn ngày, tháng, năm */
+  .birthdate-select3 select {
+    width: 20%;
+    /* Cân bằng với các ô nhập liệu khác */
+    padding: 10px;
+    border: 2px solid #ffffff;
+    background-color: #151623;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  /* Định dạng cho các trường nhập liệu */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"] {
+    width: 65%;
+    padding: 10px;
+    /* Tăng padding để giãn nội dung */
+    border: 2px solid #ffffff;
+    background-color: #151623;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 5px;
+    border-radius: 15px;
+    /* Bỏ bo góc của các trường input */
+  }
+
+  /* Định dạng khi ô nhập liệu được chọn */
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="tel"]:focus {
+    outline: none;
+    background-color: #2f3232;
+  }
+
+  /* Định dạng cho select */
+  .B {
+    width: 100%;
+    padding: 10px;
+    /* Tăng padding để đồng nhất giao diện */
+    border: 2px solid #ffffff;
+    background-color: #151623;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 15px;
+    /* Góc bo tròn để đồng bộ */
+    margin-top: 5px;
+    /* Thêm khoảng cách giữa nhãn và ô nhập liệu */
+    margin-right: 10px;
+    /* Thêm khoảng cách giữa các ô chọn để có khoảng cách tốt hơn */
+  }
+
+  /* Định dạng cho nút tạo tài khoản */
+  .btn3 {
+    width: 285px;
+    /* Điều chỉnh chiều rộng vừa đủ cho nội dung của nút */
+    padding: 15px 30px;
+    /* Tăng khoảng cách trong nút cho thẩm mỹ */
+    background-color: #f5a623;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 16px;
+    display: block;
+    /* Hiển thị dạng block để dễ căn chỉnh */
+    margin-left: auto;
+    /* Căn nút ở giữa */
+    margin-right: auto;
+    /* Căn nút ở giữa */
+    border-radius: 30px;
+  }
+
+  /* Hiệu ứng hover cho nút */
+  .btn3:hover {
+    background-color: #e0941f;
+  }
+
+  /* Container cho phần đăng nhập bằng mạng xã hội */
+  .social-login3 {
+    text-align: center;
+    margin-top: 30px;
+    /* Tăng khoảng cách trên phần login social */
+  }
+
+  /* Phân cách giữa phần "hoặc" */
+  .or-divider3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    /* Màu chữ */
+    font-size: 16px;
+    /* Kích thước chữ */
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* Khoảng cách dưới đoạn "hoặc" */
+  }
+
+  /* Đường kẻ trước và sau chữ "hoặc" */
+  .or-divider3::before,
+  .or-divider3::after {
+    content: "";
+    width: 120px;
+    /* Độ rộng của các đường kẻ */
+    border-bottom: 1px solid #ffffff;
+    /* Đường kẻ màu trắng */
+    margin: 0 10px;
+    /* Khoảng cách giữa chữ "hoặc" và đường kẻ */
+  }
+
+  /* Định dạng cho nút đăng nhập bằng Google */
+  .google-login3 {
+    width: 250px;
+    /* Điều chỉnh chiều rộng vừa đủ cho nội dung của nút */
+    padding: 10px 20px;
+    /* Tăng khoảng cách trong nút cho thẩm mỹ */
+    background-color: #f6f5f4;
+    border: none;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 16px;
+    display: flex;
+    /* Hiển thị dạng block để dễ căn chỉnh */
+    align-items: center;
+    /* Căn giữa theo trục dọc */
+    justify-content: center;
+    /* Căn giữa theo trục ngang */
+    margin-left: auto;
+    /* Căn nút ở giữa */
+    margin-right: auto;
+    /* Căn nút ở giữa */
+    border-radius: 30px;
+  }
+
+  .google-login3 img {
+    width: 27px;
+    margin-right: 10px;
+  }
+
+  .footer-text3 {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+    /* Tăng khoảng cách trên footer */
+  }
+
+  .footer-text3 a {
+    color: #f5a623;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .footer-text3 a:hover {
+    text-decoration: underline;
+  }
+
+  .highlight-link3 {
+    color: #f5a623;
+    /* Màu vàng */
+    text-decoration: none;
+    font-size: 12px;
+    /* Kích thước giống nút "Đăng nhập" */
+    font-weight: bold;
+  }
+
+  .highlight-link3:hover {
+    text-decoration: underline;
+    /* Thêm gạch dưới khi hover */
+  }
+
+  /* Đặt từng khu vực cụ thể cho các phần tử */
+  .form-group3:nth-child(1) {
+    grid-area: ho;
+  }
+
+  .form-group3:nth-child(2) {
+    grid-area: ten;
+  }
+
+  .form-group3:nth-child(3) {
+    grid-area: sdt;
+  }
+
+  .form-group3:nth-child(4) {
+    grid-area: ngaysinh;
+  }
+
+  .form-group3:nth-child(5) {
+    grid-area: email;
+  }
+
+  .form-group3:nth-child(6) {
+    grid-area: ten_dn;
+  }
+
+  .form-group3:nth-child(7) {
+    grid-area: mk;
+  }
+
+  .form-group3:nth-child(8) {
+    grid-area: nhap_lai_mk;
+  }
+
+  /* Thiết lập lưới cho màn hình lớn */
+  @media (min-width: 768px) {
+    .form-grid3 {
+      grid-template-areas:
+        "ho email"
+        "ten ten_dn"
+        "sdt mk"
+        "ngaysinh nhap_lai_mk";
+    }
+  }
+
+  /* Thiết lập lưới cho màn hình nhỏ */
+  @media (max-width: 768px) {
+    .form-grid3 {
+      grid-template-areas:
+        "ho"
+        "ten"
+        "sdt"
+        "ngaysinh"
+        "email"
+        "ten_dn"
+        "mk"
+        "nhap_lai_mk";
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  .form-container3 {
+    padding: 20px;
+  }
+
+  /* Mobile (<= 480px) */
+  @media (max-width: 480px) {
+    .form-container3 {
+      width: 90vw;
+      padding: 20px;
+      padding-left: 50px;
+
+    }
+
+    .form-grid3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .btn3,
+    .google-login3 {
+      margin-left: 100px;
+      /* Dịch sang phải một chút cho màn hình nhỏ */
+    }
+
+    .or-divider3 {
+      width: 300px;
+      padding-left: 100px;
+    }
+
+    .footer-text3 {
+      padding-left: 100px;
+      width: 300px;
+    }
+
+    .logo-container3 {
+      padding-left: 110px;
+    }
+  }
+
+  /* Tablet (768px - 1023px) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .form-container3 {
+      width: 70vw;
+      padding: 30px;
+
+
+    }
+
+    .form-grid3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding-left: 0px;
+
+    }
+
+    .btn3,
+    .google-login3,
+    .footer-text3 {
+      margin-left: 110px;
+      /* Dịch sang phải một chút cho màn hình tablet */
+    }
+
+    .footer-text3 {
+      width: 300px;
+
+    }
+
+  }
+
+  /* Laptop (1024px) */
+  @media (min-width: 1024px) and (max-width: 1070px) {
+
+    .form-grid3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-right: 100px;
+
+
+    }
+
+    .footer-text3 {
+      width: 600px;
+      margin-left: 0px;
+      padding-left: 200px;
+
+    }
+
+  }
+
+  @media (min-width: 2560px) {
+    .form-grid3 {
+      width: 700px;
+      padding-left: 0px;
+
+    }
+  }

@@ -7,7 +7,7 @@
     font-family: Arial, sans-serif;
 }
 
-body {
+.setprofile {
     background-color: #00282c;
     display: flex;
     flex-direction: column;
@@ -30,17 +30,23 @@ body {
     height: 60px;
 
 }
-.sign-out{
+
+.sign-out2 {
     padding-right: 20px;
 }
-.logo {
+
+.logo2 {
     font-weight: bold;
 }
-.logo-image {
-    height: 70px; /* Điều chỉnh chiều cao của logo cho phù hợp */
-    width: auto; /* Giữ tỷ lệ khung hình của logo */
+
+.logo-image2 {
+    height: 70px;
+    /* Điều chỉnh chiều cao của logo cho phù hợp */
+    width: auto;
+    /* Giữ tỷ lệ khung hình của logo */
 }
-.sign-out {
+
+.sign-out2 {
     background: none;
     border: none;
     color: white;
@@ -48,24 +54,26 @@ body {
     cursor: pointer;
 }
 
-.profile-container {
+.profile-container2 {
     display: flex;
     justify-content: center;
     padding: 2rem;
     padding-top: 80px;
-    width: 800px; /* Điều chỉnh giá trị này tùy theo nhu cầu */
-    max-width: 90%; /* Đảm bảo không vượt quá 90% màn hình trên các thiết bị nhỏ */
+    width: 800px;
+    /* Điều chỉnh giá trị này tùy theo nhu cầu */
+    max-width: 90%;
+    /* Đảm bảo không vượt quá 90% màn hình trên các thiết bị nhỏ */
     padding: 2rem;
 
 }
 
-.profile-card {
+.profile-card2 {
     background-color: white;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 600px;
-    height:480px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,65 +82,78 @@ body {
 
 }
 
-.info-section, .account-section {
+.info-section2,
+.account-section2 {
     width: 100%;
     margin-bottom: 1rem;
     flex: 1;
 
-    
+
 }
 
-.info-section p, .account-section p {
+.info-section2 p,
+.account-section2 p {
     display: flex;
     margin-bottom: 1.75rem;
     align-items: center;
 }
-.section-header {
+
+.section-header2 {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
 }
 
-.section-header h2 {
+.section-header2 h2 {
     font-size: 1.2rem;
     font-weight: bold;
 }
-.section-header i {
-    margin-right: 8px; /* Khoảng cách giữa biểu tượng và tiêu đề */
-    font-size: 1.2rem; /* Kích thước biểu tượng */
-    color: #000000; /* Màu sắc biểu tượng */
-    vertical-align: middle; /* Căn giữa biểu tượng theo chiều dọc */
+
+.section-header2 i {
+    margin-right: 8px;
+    /* Khoảng cách giữa biểu tượng và tiêu đề */
+    font-size: 1.2rem;
+    /* Kích thước biểu tượng */
+    color: #000000;
+    /* Màu sắc biểu tượng */
+    vertical-align: middle;
+    /* Căn giữa biểu tượng theo chiều dọc */
 }
 
 
-.edit-link {
+.edit-link2 {
     color: #009dff;
     text-decoration: none;
     font-size: 0.9rem;
     margin-left: 50px;
 }
-.edit-link:hover {
-    color: #007acc; /* Thay đổi màu khi di chuột qua */
+
+.edit-link2:hover {
+    color: #007acc;
+    /* Thay đổi màu khi di chuột qua */
 }
-.avatar-section {
+
+.avatar-section2 {
     position: relative;
     position: absolute;
-    top: 50px; /* Khoảng cách từ trên cùng của form */
-    right: 40px; /* Khoảng cách từ bên phải của form */
+    top: 50px;
+    /* Khoảng cách từ trên cùng của form */
+    right: 40px;
+    /* Khoảng cách từ bên phải của form */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+
 }
 
-.avatar {
+.avatar2 {
     width: 160px;
     height: 180px;
     border-radius: 10px;
 }
 
-.edit-icon {
+.edit-icon2 {
     position: absolute;
     bottom: 5px;
     right: 5px;
@@ -144,90 +165,109 @@ body {
     font-size: 0.8rem;
 }
 
-p {
+.F {
     font-size: 0.9rem;
     color: #333;
     margin-bottom: 0.5rem;
 }
-p span {
+
+.F span {
     color: #555;
     padding-left: 0
 }
-p strong {
+
+.F strong {
     display: inline;
     font-weight: bold;
     color: #666;
     font-weight: bold;
     color: #333;
     margin-right: 50px;
-    
+
 }
+
 @media (max-width: 704px) {
-   .header{
-    height:45px;
-   }
-   .logo-image {
-    height: 45px!important; /* Giảm chiều cao logo để vừa với header nhỏ */
-    position: absolute;
-    left: 10px; /* Đẩy logo sát về phía bên trái */
-    top: 3px; /* Căn chỉnh logo với chiều cao của header */
-}
-
-.sign-out {
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    font-size: 0.7rem !important;
-    padding: 0.2rem 0.5rem;
-}
-
-    .profile-container {
-        padding: 1rem; /* Giảm padding cho thiết bị nhỏ */
+    .header {
+        height: 45px;
     }
 
-    .profile-card {
-        width: 100%; /* Chiều rộng 100% cho các thiết bị nhỏ hơn */
-        padding: 1rem; /* Giảm padding cho card */
-        height:660px;
+    .logo-image2 {
+        height: 45px !important;
+        /* Giảm chiều cao logo để vừa với header nhỏ */
+        position: absolute;
+        left: 10px;
+        /* Đẩy logo sát về phía bên trái */
+        top: 3px;
+        /* Căn chỉnh logo với chiều cao của header */
+    }
+
+    .sign-out2 {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        font-size: 0.7rem !important;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .profile-container2 {
+        padding: 1rem;
+        /* Giảm padding cho thiết bị nhỏ */
+    }
+
+    .profile-card2 {
+        width: 100%;
+        /* Chiều rộng 100% cho các thiết bị nhỏ hơn */
+        padding: 1rem;
+        /* Giảm padding cho card */
+        height: 660px;
         margin-top: 50px;
     }
-    .avatar-section {
+
+    .avatar-section2 {
         position: absolute;
-        top: 10px; /* Giảm giá trị này để đẩy avatar lên trên */
-        right: 45px; 
-        left:70px;
+        top: 10px;
+        /* Giảm giá trị này để đẩy avatar lên trên */
+        right: 45px;
+        left: 70px;
         display: flex;
         align-items: center;
         flex-direction: column;
-       
+
     }
-    .section-header h2 {
-        font-size: 1rem; /* Điều chỉnh kích thước tiêu đề */
+
+    .section-header2 h2 {
+        font-size: 1rem;
+        /* Điều chỉnh kích thước tiêu đề */
     }
 
     p {
-        font-size: 0.8rem; /* Điều chỉnh kích thước văn bản */
+        font-size: 0.8rem;
+        /* Điều chỉnh kích thước văn bản */
     }
 
-.info-section{
-    width: 100%;
-    margin-top: 200px; /* Đẩy các phần xuống cuối */
-}
+    .info-section2 {
+        width: 100%;
+        margin-top: 200px;
+        /* Đẩy các phần xuống cuối */
+    }
 
 }
 
 /* Media queries cho màn hình siêu nhỏ */
 @media (max-width: 480px) {
-    .logo-image {
-        height: 25px; /* Giảm kích thước logo hơn nữa nếu cần */
+    .logo-image2 {
+        height: 25px;
+        /* Giảm kích thước logo hơn nữa nếu cần */
     }
 
     .header {
-        flex-direction: column; /* Căn chỉnh cột cho tất cả thiết bị nhỏ */
+        flex-direction: column;
+        /* Căn chỉnh cột cho tất cả thiết bị nhỏ */
     }
 
-    .sign-out {
-        font-size: 0.8rem; /* Điều chỉnh kích thước nút đăng xuất */
+    .sign-out2 {
+        font-size: 0.8rem;
+        /* Điều chỉnh kích thước nút đăng xuất */
     }
 
 }

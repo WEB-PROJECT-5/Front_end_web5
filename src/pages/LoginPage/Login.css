@@ -18,17 +18,17 @@ main {
    flex: 1;
 }
 
-.register-container {
+.register-container4 {
    width: 100vw;
    height: 100vh;
    display: flex;
    align-items: center;
    justify-content: center;
+   background: #00282c;
 }
 
-.form-container {
+.form-container4 {
    background-color: #00282c;
-   padding: 40px;
    width: 100%;
    max-width: 500px;
    /* Giới hạn chiều rộng tối đa để hợp lý trên màn hình lớn */
@@ -38,12 +38,12 @@ main {
 }
 
 /* Container cho logo */
-.logo-container {
+.logo-container4 {
    text-align: center;
    margin-bottom: 30px;
 }
 
-.logo-container img {
+.logo-container4 img {
    max-width: 200px;
    height: auto;
    padding-left: 30px;
@@ -66,7 +66,7 @@ h2 {
    font-family: 'Poppins', sans-serif;
 }
 
-.form-grid {
+.form-grid4 {
    display: grid;
    gap: 20px;
    width: 100%;
@@ -76,7 +76,7 @@ h2 {
 }
 
 /* Các nhóm nhập liệu */
-.container-input {
+.container-input4 {
    display: flex;
    flex-direction: column;
    width: 100%;
@@ -84,14 +84,14 @@ h2 {
 }
 
 /* Label cho các trường nhập */
-.container-input label {
+.container-input4 label {
    margin-bottom: 5px;
    font-size: 14px;
    color: #ffffff;
 }
 
 /* Trường nhập liệu */
-.container-input input {
+.container-input4 input {
    width: 100%;
    padding: 10px;
    border-radius: 5px;
@@ -111,6 +111,8 @@ input[type="password"] {
    font-size: 14px;
    margin-top: 5px;
    border-radius: 20px;
+   margin-right: 20px;
+   ;
 }
 
 /* Định dạng khi ô nhập liệu được chọn */
@@ -120,7 +122,7 @@ input[type="password"]:focus {
    background-color: #2f3232;
 }
 
-.btn {
+.btn4 {
    padding: 15px;
    background-color: #f5a623;
    border: none;
@@ -129,28 +131,30 @@ input[type="password"]:focus {
    cursor: pointer;
    font-size: 16px;
    border-radius: 30px;
-   width: 86%;
+   width: 465px;
    max-width: 120%;
    text-align: center;
-   height: 50px;
+   height: 40px;
    margin-top: 50px;
+   padding-top: 5px;
+
 
 
 }
 
 /* Hiệu ứng hover cho nút */
-.btn:hover {
+.btn4:hover {
    background-color: #e0941f;
 }
 
 /* Container cho phần đăng nhập bằng mạng xã hội */
-.social-login {
+.social-login4 {
    text-align: center;
    margin-top: 20px;
 }
 
 /* Phân cách giữa phần "hoặc" */
-.or-divider {
+.or-divider4 {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -162,16 +166,15 @@ input[type="password"]:focus {
 
 }
 
-.or-divider::before,
-.or-divider::after {
+.or-divider4::before,
+.or-divider4::after {
    content: "";
    width: 10px;
    border-bottom: 1px solid #ffffff;
    margin: 0 5px;
 }
 
-.google-login {
-   padding: 10px;
+.google-login4 {
    background-color: #f6f5f4;
    border: none;
    color: #000000;
@@ -184,37 +187,37 @@ input[type="password"]:focus {
    justify-content: center;
    width: 500px;
    max-width: 100%;
-   height: 30px;
    margin-top: 3cqmax;
+   height: 40px;
 
 }
 
-.google-login img {
+.google-login4 img {
    width: 20px;
    margin-right: 10px;
 }
 
-.footer-text {
+.footer-text4 {
    font-size: 14px;
    text-align: center;
    margin-top: 70px;
 }
 
-.footer {
+.footer4 {
    padding-left: 150px;
 }
 
-.footer-text a {
+.footer-text4 a {
    color: #f5a623;
    text-decoration: none;
    font-weight: bold;
 }
 
-.footer-text a:hover {
+.footer-text4 a:hover {
    text-decoration: underline;
 }
 
-.highlight-link {
+.highlight-link4 {
    color: #e0941f
 }
 
@@ -222,8 +225,7 @@ input[type="password"]:focus {
 @media (max-width: 480px) {
 
    /* Điều chỉnh form container */
-   .form-container {
-      padding: 50px;
+   .form-container4 {
       width: 75%;
       /* Đảm bảo chiều rộng vừa đủ trên màn hình nhỏ */
       height: auto;
@@ -232,13 +234,13 @@ input[type="password"]:focus {
       /* Giới hạn chiều rộng tối đa cho màn hình nhỏ */
    }
 
-   .form-grid {
+   .form-grid4 {
       padding-left: 0px;
 
    }
 
    /* Căn chỉnh logo */
-   .logo-container img {
+   .logo-container4 img {
       max-width: 150px;
       /* Giảm kích thước logo */
    }
@@ -261,36 +263,37 @@ input[type="password"]:focus {
    }
 
    /* Nút đăng nhập */
-   .btn {
-      width: 106%;
+   .btn4 {
+      width: 98%;
       /* Chiếm toàn bộ chiều rộng */
       font-size: 16px;
-      padding: 10px;
       height: 45px;
+      padding-top: 5px;
+
    }
 
    /* Đường kẻ "hoặc" */
-   .or-divider::before,
-   .or-divider::after {
+   .or-divider4::before,
+   .or-divider4::after {
       width: 50%;
       /* Giảm độ dài đường kẻ để vừa với màn hình */
    }
 
    /* Nút đăng nhập Google */
-   .google-login {
+   .google-login4 {
       width: 98%;
       /* Chiếm toàn bộ chiều rộng */
       padding: 10px;
       font-size: 14px;
-      height: 25px;
+      height: 40px;
    }
 
-   .or-divider {
+   .or-divider4 {
       padding-left: 20px;
    }
 
    /* Footer */
-   .footer {
+   .footer4 {
       text-align: center;
       width: 110%;
       padding-left: 0px;
@@ -301,91 +304,115 @@ input[type="password"]:focus {
 
 /* Laptop (1024px - 1366px) */
 @media (min-width: 1024px) and (max-width: 1366px) {
-   .form-container {
+   .form-container4 {
       padding: 40px;
       max-width: 60%;
    }
 
-   .or-divider::before,
-   .or-divider::after {
-      width: 230px;
+   .or-divider4::before,
+   .or-divider4::after {
+      width: 220px;
 
    }
 
-   .or-divider {
-      padding-right: 80px;
+   .or-divider4 {
+      padding-right: 40px;
    }
 
-   .footer {
-      padding-left: 200px;
+   .footer4 {
+      padding-left: 180px;
       margin-top: 0px;
    }
 
+   .footer-text4 {
+      padding-left: 50px;
+   }
+
+   .btn4 {
+      width: 500px;
+   }
+
    /* Nút đăng nhập Google */
-   .google-login {
-      width: 83%;
-      /* Chiếm toàn bộ chiều rộng */
-      padding: 10px;
+   .google-login4 {
+      width: 90%;
       font-size: 14px;
-      height: 30px;
+      height: 40px;
+
+   }
+
+
+   .social-login4 {
+      padding-left: 50px;
+      width: 600px;
    }
 }
 
 @media (min-width: 1440px) {
-   .form-container {
+   .form-container4 {
       padding: 0px;
       max-width: 100%;
       width: 40%;
    }
 
-   .form-grid {
+   .form-grid4 {
       padding-left: 45px;
 
    }
 
-   .or-divider::before,
-   .or-divider::after {
+   .or-divider4::before,
+   .or-divider4::after {
       width: 220px;
    }
 
-   .or-divider {
-      padding-right: 4500px;
+   .or-divider4 {
+      padding-right: 20px;
    }
 
-   .footer {
+   .footer4 {
       padding-left: 200px;
       margin-top: 0px;
    }
 
-   .footer-text {
+   .footer-text4 {
       padding-left: 40px;
+
    }
 
-   .btn {
-      width: 525px;
+   .btn4 {
+      width: 500px;
    }
 
-   .google-login {
-      width: 510px;
+   .social-login4 {
+      padding-left: 50px;
 
    }
 
 }
 
 @media (min-width: 2560px) {
-   .logo-container {
-      padding-right: 400px;
+   .form-container4 {
+      max-width: 30%;
+      /* Giảm chiều rộng tối đa để form nhỏ gọn hơn */
    }
 
-   .footer {
-      padding-left: 220px;
+   .logo-container4 {
+      padding-right: 0;
+      /* Bỏ padding để căn giữa logo */
    }
 
-   .footer-text {
-      margin-top: 44px;
+   .or-divider4::before,
+   .or-divider4::after {
+      width: 150px;
+      /* Giảm chiều dài đường kẻ cho phù hợp */
    }
 
-   .highlight-link {
-      padding-right: 400px;
+
+
+   .footer4,
+   .footer-text4 {
+      padding-left: 0;
+      /* Căn giữa footer */
+      text-align: center;
+      /* Đảm bảo footer căn giữa */
    }
 }

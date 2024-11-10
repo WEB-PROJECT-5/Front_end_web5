@@ -17,25 +17,25 @@ const SetProfile = () => {
     };
 
     return (
-        <div>
+        <div classname="setprofile">
             <header className="header">
-                <div className="logo">
-                    <img src="./LOGO.png" alt="UEH Discovery Logo" className="logo-image" />
+                <div className="logo2">
+                    <img src="./LOGO.png" alt="UEH Discovery Logo" className="logo-image2" />
                 </div>
-                <button className="sign-out">Sign Out</button>
+                <button className="sign-out2">Sign Out</button>
             </header>
 
-            <main className="profile-container">
-                <div className="profile-card">
-                    <div className="info-section">
-                        <div className="section-header">
-                            <i className="fas fa-info-circle"></i>
+            <main className="profile-container2">
+                <div className="profile-card2">
+                    <div className="info-section2">
+                        <div className="section-header2">
+                            <i className="fas fa-info-circle2"></i>
                             <h2>Information</h2>
                             <a href="#" id="edit-info" className="edit-link">Edit</a>
                         </div>
-                        <div className="avatar-section">
-                            <img id="avatar-image" src={avatar} alt="Avatar" className="avatar" />
-                            <div className="edit-icon" id="edit-avatar">✎</div>
+                        <div className="avatar-section2">
+                            <img id="avatar-image" src={avatar} alt="Avatar" className="avatar2" />
+                            <div className="edit-icon2" id="edit-avatar">✎</div>
                             <input
                                 type="file"
                                 id="avatar-input"
@@ -43,20 +43,20 @@ const SetProfile = () => {
                                 onChange={handleAvatarChange}
                             />
                         </div>
-                        <p><strong>Name:</strong> <span id="name">{name}</span></p>
-                        <p><strong>Date of birth:</strong> <span id="dob">{dob}</span></p>
-                        <p><strong>Email:</strong> <span id="email">{email}</span></p>
-                        <p><strong>Phone:</strong> <span id="phone">{phone}</span></p>
+                        <p classname="F"><strong>Name:</strong> <span id="name">{name}</span></p>
+                        <p classname="F"><strong>Date of birth:</strong> <span id="dob">{dob}</span></p>
+                        <p classname="F"><strong>Email:</strong> <span id="email">{email}</span></p>
+                        <p classname="F"><strong>Phone:</strong> <span id="phone">{phone}</span></p>
                     </div>
 
-                    <div className="account-section">
-                        <div className="section-header">
-                            <i className="fas fa-user-circle"></i>
+                    <div className="account-section2">
+                        <div className="section-header2">
+                            <i className="fas fa-user-circle2"></i>
                             <h2>Account</h2>
-                            <a href="#" id="edit-account" className="edit-link">Edit</a>
+                            <a href="#" id="edit-account" className="edit-link2">Edit</a>
                         </div>
-                        <p><strong>Username:</strong> <span id="username">{username}</span></p>
-                        <p><strong>Password:</strong> <span>**********</span></p>
+                        <p classname="F"><strong>Username:</strong> <span id="username">{username}</span></p>
+                        <p classname="F"><strong>Password:</strong> <span>**********</span></p>
                     </div>
                 </div>
             </main>

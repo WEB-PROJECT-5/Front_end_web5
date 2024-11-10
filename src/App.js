@@ -36,14 +36,14 @@ import 'aos/dist/aos.css';
 function App() {
    useEffect(() => {
       AOS.init({
-        duration: 1000, // Animation duration in milliseconds
-        once: true,     // Only animate once
+         duration: 1000, // Animation duration in milliseconds
+         once: true,     // Only animate once
       });
-    }, []);
+   }, []);
    const location = useLocation();
 
    // Định nghĩa mảng chứa các đường dẫn không cần Header/Footer
-   const routesWithoutHeaderFooter = ['/introduce', '/login'];  // Thêm '/login' vào đây
+   const routesWithoutHeaderFooter = ['/profile', '/profile/setprofile', '/login'];  // Thêm '/profile' và '/login' vào đây
 
    // Kiểm tra xem trang hiện tại có nằm trong danh sách loại trừ không
    const shouldShowHeaderFooter = !routesWithoutHeaderFooter.includes(location.pathname);
